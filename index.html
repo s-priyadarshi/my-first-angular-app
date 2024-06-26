@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="script.js"></script>
     <title>My First AngularJS App</title>
-  </head>
-  <body>
-    <div ng-app="mainApplication" ng-controller="mainController">
-      <input class="form-control" type="text" ng-model="name" >
-      <h4 class="jumbotron col-sm-12">{{name}}</h4>
+</head>
+
+<body>
+    <div ng-app="mainApplication" style="padding: 20px;" ng-controller="mainController">
+        <input class="form-control" placeholder="Type here..." type="text" ng-model="name">
+        <h4 class="jumbotron" style="padding-left: 10px; padding-right: 10px; border-radius: 4px;">{{ name }}</h4>
     </div>
-  </body>
+</body>
+
 </html>
